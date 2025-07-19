@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETV Win || TV Shows</title>
+  <link rel="stylesheet" href="tv-shows.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+
+
+ <header class="navbar">
+    <div class="nav-left">
+      <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" alt="ETV Win Logo">
+      <nav class="nav-menu">
+        <a href="index.html" >HOME</a>
+        <a href="tv-shows.html" class="active">TV SHOWS</a>
+        <a href="movies.html">MOVIES</a>
+        <a href="watch-free.html">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburgerBtn">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" />
+        <span class="drawer-close" id="drawerCloseBtn">&times;</span>
+      </div>
+
+      <div class="drawer-buttons">
+        <a href="#" class="drawer-login">Login</a>
+
+        <div id="loginModal" class="modern-modal">
+          <div class="modern-overlay"></div>
+          <div class="login-card">
+            <span class="close-btn">&times;</span>
+            <h2>Welcome Back</h2>
+            <p>Log in to enjoy unlimited entertainment</p>
+
+            <div class="input-group">
+              <input type="text" placeholder="Email or Mobile Number" />
+            </div>
+            <div class="input-group">
+              <input type="password" placeholder="Password" />
+            </div>
+            <button class="login-action">Continue</button>
+
+            <div class="login-footer">
+              <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="subscribe.html" class="drawer-subscribe">Subscribe</a>
+      </div>
+
+      <nav class="drawer-menu">
+        <a href="index.html" class="active">HOME</a>
+        <a href="tv-shows.html">TV SHOWS</a>
+        <a href="movies.html">MOVIES</a>
+        <a href="watch-free.html">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <p>Download App</p>
+        <div class="store-icons">
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-google-play"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="nav-right">
+      <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <!-- <a href="#" class="login" id="openLogin">Login</a> -->
+
+      <!-- login popup -->
+      <!-- Login Modal -->
+      <a href="#" id="openLogin" class="login">Login</a>
+
+      <div id="loginModal" class="modern-modal">
+        <div class="modern-overlay"></div>
+        <div class="login-card">
+          <span class="close-btn">&times;</span>
+          <h2>Welcome Back</h2>
+          <p>Log in to enjoy unlimited entertainment</p>
+
+          <div class="input-group">
+            <input type="text" placeholder="Email or Mobile Number" />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button class="login-action">Continue</button>
+
+          <div class="login-footer">
+            <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+          </div>
+        </div>
+      </div>
+      <!-- 
+login popup end -->
+
+
+
+      <a href="subscribe.html" class="subscribe-btn">Subscribe</a>
+    </div>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="hero-bg" id="heroBg">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-title" id="heroTitle">Featured Show</h1>
+          <div class="hero-genres" id="heroGenres"></div>
+          <p class="hero-description" id="heroDescription"></p>
+          <div class="hero-buttons">
+            <button class="watch-btn">▶ Watch Now</button>
+            <button class="list-btn">+ My List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thumbnail Slider -->
+    <div class="thumbnail-slider">
+      <button class="nav-btn left" id="leftBtn">&#10094;</button>
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Thumbnails injected by JS -->
+        </div>
+      </div>
+      <button class="nav-btn right" id="rightBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- before tv sec -->
+
+  <section class="custom-slider-sec">
+    <div class="custom-slider-header">
+      <h2 class="custom-title">Before TV</h2> <a href="#" class="custom-more">More »</a>
+    </div>
+    <div class="custom-slider-wrapper"> <button class="custom-arrow left" id="customLeft">‹</button>
+
+      <div class="custom-scroll-container" id="customScroll">
+        <!-- Repeat this card -->
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <div class="custom-card">
+          <div class="custom-thumb">
+            <span class="custom-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Episode">
+            <span class="custom-play">▶</span>
+          </div>
+          <div class="custom-meta">Epi 696 | 18 Jul 25</div>
+        </div>
+        <!-- Add more cards here -->
+      </div>
+
+      <button class="custom-arrow right" id="customRight">›</button>
+    </div>
+  </section>
+
+  <!-- Latest Promos -->
+  <section class="promo-sec">
+    <div class="promo-sec-header">
+      <h2 class="promo-sec-title">Latest Promos</h2>
+      <a href="#" class="promo-sec-more">More »</a>
+    </div>
+
+    <div class="promo-sec-wrapper">
+      <button class="promo-sec-arrow left" id="promoArrowLeft">‹</button>
+
+      <div class="promo-sec-scroll" id="promoScrollContainer">
+        <!-- Repeatable Card -->
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+        <div class="promo-sec-card">
+          <div class="promo-sec-thumb">
+            <span class="promo-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Promo">
+            <span class="promo-sec-play">▶</span>
+          </div>
+          <div class="promo-sec-meta">20 July 25 | 14 Jul 25</div>
+        </div>
+
+        <!-- Duplicate as needed -->
+        <!-- ... -->
+      </div>
+
+      <button class="promo-sec-arrow right" id="promoArrowRight">›</button>
+    </div>
+  </section>
+
+  <!-- Latest Episodes -->
+  <section class="episodes-sec">
+    <div class="episodes-sec-header">
+      <h2 class="episodes-sec-title">Latest Episodes</h2>
+      <a href="#" class="episodes-sec-more">More »</a>
+    </div>
+
+    <div class="episodes-sec-wrapper">
+      <button class="episodes-sec-arrow left" id="episodesArrowLeft">‹</button>
+
+      <div class="episodes-sec-scroll" id="episodesScrollContainer">
+        <!-- Episode Card -->
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+
+        <div class="episodes-sec-card">
+          <div class="episodes-sec-thumb">
+            <span class="episodes-sec-lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Episode">
+            <span class="episodes-sec-play">▶</span>
+          </div>
+          <div class="episodes-sec-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <!-- Duplicate .episodes-sec-card with new content as needed -->
+      </div>
+
+      <button class="episodes-sec-arrow right" id="episodesArrowRight">›</button>
+    </div>
+  </section>
+
+  <!-- Trending Now -->
+  <section class="trendnow-sec">
+    <div class="trendnow-header">
+      <h2 class="trendnow-title">Trending Now</h2>
+      <a href="#" class="trendnow-more">More »</a>
+    </div>
+
+    <div class="trendnow-wrapper">
+      <button class="trendnow-arrow left" id="trendnowLeft">‹</button>
+
+      <div class="trendnow-scroll" id="trendnowScrollContainer">
+        <!-- Card -->
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="trendnow-arrow right" id="trendnowRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Most Watched / Popular -->
+
+  <section class="popular-sec">
+    <div class="popular-header">
+      <h2 class="popular-title">Most Watched / Popular</h2>
+      <a href="#" class="popular-more">More »</a>
+    </div>
+
+    <div class="popular-wrapper">
+      <button class="popular-arrow left" id="popularLeft">‹</button>
+
+      <div class="popular-scroll" id="popularScrollContainer">
+        <!-- Card -->
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="popular-arrow right" id="popularRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Events -->
+  <section class="events-sec">
+    <div class="events-header">
+      <h2 class="events-title">Events</h2>
+      <a href="#" class="events-more">More »</a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left" id="eventsLeft">‹</button>
+
+      <div class="events-scroll" id="eventsScrollContainer">
+        <!-- Single Card -->
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+
+
+        <!-- Duplicate this card block with different images/meta as needed -->
+      </div>
+
+      <button class="events-arrow right" id="eventsRight">›</button>
+    </div>
+  </section>
+
+  <!-- Mythological Section -->
+  <section class="mythology-sec">
+    <div class="mythology-header">
+      <h2 class="mythology-title">Mythological</h2>
+      <a href="#" class="mythology-more">More »</a>
+    </div>
+
+    <div class="mythology-wrapper">
+      <button class="mythology-arrow left" id="mythologyLeft">‹</button>
+
+      <div class="mythology-scroll" id="mythologyScrollContainer">
+        <!-- One Card Example -->
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <div class="mythology-card">
+          <div class="mythology-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Mythology Show" />
+          </div>
+        </div>
+
+        <!-- Duplicate this .mythology-card with different images -->
+      </div>
+
+      <button class="mythology-arrow right" id="mythologyRight">›</button>
+    </div>
+  </section>
+
+  <!-- Trending Now -->
+  <section class="trendnow-sec">
+    <div class="trendnow-header">
+      <h2 class="trendnow-title">Trending Now</h2>
+      <a href="#" class="trendnow-more">More »</a>
+    </div>
+
+    <div class="trendnow-wrapper">
+      <button class="trendnow-arrow left" id="trendnowLeft">‹</button>
+
+      <div class="trendnow-scroll" id="trendnowScrollContainer">
+        <!-- Card -->
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="trendnow-arrow right" id="trendnowRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Most Watched / Popular -->
+
+  <section class="popular-sec">
+    <div class="popular-header">
+      <h2 class="popular-title">Most Watched / Popular</h2>
+      <a href="#" class="popular-more">More »</a>
+    </div>
+
+    <div class="popular-wrapper">
+      <button class="popular-arrow left" id="popularLeft">‹</button>
+
+      <div class="popular-scroll" id="popularScrollContainer">
+        <!-- Card -->
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="popular-arrow right" id="popularRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Events -->
+  <section class="events-sec">
+    <div class="events-header">
+      <h2 class="events-title">Events</h2>
+      <a href="#" class="events-more">More »</a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left" id="eventsLeft">‹</button>
+
+      <div class="events-scroll" id="eventsScrollContainer">
+        <!-- Single Card -->
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+
+
+        <!-- Duplicate this card block with different images/meta as needed -->
+      </div>
+
+      <button class="events-arrow right" id="eventsRight">›</button>
+    </div>
+  </section>
+
+  <!-- Trending Now -->
+  <section class="trendnow-sec">
+    <div class="trendnow-header">
+      <h2 class="trendnow-title">Trending Now</h2>
+      <a href="#" class="trendnow-more">More »</a>
+    </div>
+
+    <div class="trendnow-wrapper">
+      <button class="trendnow-arrow left" id="trendnowLeft">‹</button>
+
+      <div class="trendnow-scroll" id="trendnowScrollContainer">
+        <!-- Card -->
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="trendnow-arrow right" id="trendnowRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Most Watched / Popular -->
+
+  <section class="popular-sec">
+    <div class="popular-header">
+      <h2 class="popular-title">Most Watched / Popular</h2>
+      <a href="#" class="popular-more">More »</a>
+    </div>
+
+    <div class="popular-wrapper">
+      <button class="popular-arrow left" id="popularLeft">‹</button>
+
+      <div class="popular-scroll" id="popularScrollContainer">
+        <!-- Card -->
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="popular-arrow right" id="popularRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Events -->
+  <section class="events-sec">
+    <div class="events-header">
+      <h2 class="events-title">Events</h2>
+      <a href="#" class="events-more">More »</a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left" id="eventsLeft">‹</button>
+
+      <div class="events-scroll" id="eventsScrollContainer">
+        <!-- Single Card -->
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+
+
+        <!-- Duplicate this card block with different images/meta as needed -->
+      </div>
+
+      <button class="events-arrow right" id="eventsRight">›</button>
+    </div>
+  </section>
+
+  <!-- Trending Now -->
+  <section class="trendnow-sec">
+    <div class="trendnow-header">
+      <h2 class="trendnow-title">Trending Now</h2>
+      <a href="#" class="trendnow-more">More »</a>
+    </div>
+
+    <div class="trendnow-wrapper">
+      <button class="trendnow-arrow left" id="trendnowLeft">‹</button>
+
+      <div class="trendnow-scroll" id="trendnowScrollContainer">
+        <!-- Card -->
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="trendnow-arrow right" id="trendnowRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Most Watched / Popular -->
+
+  <section class="popular-sec">
+    <div class="popular-header">
+      <h2 class="popular-title">Most Watched / Popular</h2>
+      <a href="#" class="popular-more">More »</a>
+    </div>
+
+    <div class="popular-wrapper">
+      <button class="popular-arrow left" id="popularLeft">‹</button>
+
+      <div class="popular-scroll" id="popularScrollContainer">
+        <!-- Card -->
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Manasantha Nuvve" />
+        </div>
+
+        <div class="popular-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-270x360.jpg"
+            alt="Radhai Chandramama" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="popular-arrow right" id="popularRight">›</button>
+    </div>
+  </section>
+
+
+  <!-- Events -->
+  <section class="events-sec">
+    <div class="events-header">
+      <h2 class="events-title">Events</h2>
+      <a href="#" class="events-more">More »</a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left" id="eventsLeft">‹</button>
+
+      <div class="events-scroll" id="eventsScrollContainer">
+        <!-- Single Card -->
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+        <div class="events-card">
+          <div class="events-thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Balu Krishna Event" />
+            <div class="events-overlay">
+              <span class="lock-icon">🔒</span>
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
+          <p class="events-meta">Epi 01 | Bala... | 22 Jun 25</p>
+        </div>
+
+
+
+        <!-- Duplicate this card block with different images/meta as needed -->
+      </div>
+
+      <button class="events-arrow right" id="eventsRight">›</button>
+    </div>
+  </section>
+
+  <!-- footer sec -->
+  <!-- footer sec -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <ul class="footer-nav">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Redeem</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Subscription</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" alt="ETV Win Logo">
+        <p>© Eenadu Television Pvt. Ltd. 2025. All Rights Reserved</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Get in Touch with us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-apps">
+        <h4>Download App</h4>
+        <div class="app-buttons">
+          <img src="images/home page/play.jpg" alt="Google Play">
+          <img src="images/home page/app.jpg" alt="App Store">
+        </div>
+      </div>
+
+      <div class="footer-availability">
+        <h4>Also Available on</h4>
+        <div class="platform-logos">
+          <img src="images/home page/tvs_logos.png" alt="Fire TV">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="tv-shows.js"></script>
+</body>
+
+</html>

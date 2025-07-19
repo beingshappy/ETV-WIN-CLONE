@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETV Win || Watch-free</title>
+  <link rel="stylesheet" href="watch-free.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" alt="ETV Win Logo">
+      <nav class="nav-menu">
+        <a href="index.html" >HOME</a>
+        <a href="tv-shows.html">TV SHOWS</a>
+        <a href="movies.html">MOVIES</a>
+        <a href="watch-free.html" class="active">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburgerBtn">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" />
+        <span class="drawer-close" id="drawerCloseBtn">&times;</span>
+      </div>
+
+      <div class="drawer-buttons">
+        <a href="#" class="drawer-login">Login</a>
+
+        <div id="loginModal" class="modern-modal">
+          <div class="modern-overlay"></div>
+          <div class="login-card">
+            <span class="close-btn">&times;</span>
+            <h2>Welcome Back</h2>
+            <p>Log in to enjoy unlimited entertainment</p>
+
+            <div class="input-group">
+              <input type="text" placeholder="Email or Mobile Number" />
+            </div>
+            <div class="input-group">
+              <input type="password" placeholder="Password" />
+            </div>
+            <button class="login-action">Continue</button>
+
+            <div class="login-footer">
+              <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="subscribe.html" class="drawer-subscribe">Subscribe</a>
+      </div>
+
+      <nav class="drawer-menu">
+        <a href="index.html" class="active">HOME</a>
+        <a href="tv-shows.html">TV SHOWS</a>
+        <a href="movies.html">MOVIES</a>
+        <a href="watch-free.html">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <p>Download App</p>
+        <div class="store-icons">
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-google-play"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="nav-right">
+      <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <!-- <a href="#" class="login" id="openLogin">Login</a> -->
+
+      <!-- login popup -->
+      <!-- Login Modal -->
+      <a href="#" id="openLogin" class="login">Login</a>
+
+      <div id="loginModal" class="modern-modal">
+        <div class="modern-overlay"></div>
+        <div class="login-card">
+          <span class="close-btn">&times;</span>
+          <h2>Welcome Back</h2>
+          <p>Log in to enjoy unlimited entertainment</p>
+
+          <div class="input-group">
+            <input type="text" placeholder="Email or Mobile Number" />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button class="login-action">Continue</button>
+
+          <div class="login-footer">
+            <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+          </div>
+        </div>
+      </div>
+      <!-- 
+login popup end -->
+
+
+
+      <a href="subscribe.html" class="subscribe-btn">Subscribe</a>
+    </div>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="hero-bg" id="heroBg">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-title" id="heroTitle">Featured Show</h1>
+          <div class="hero-genres" id="heroGenres"></div>
+          <p class="hero-description" id="heroDescription"></p>
+          <div class="hero-buttons">
+            <button class="watch-btn">▶ Watch Now</button>
+            <button class="list-btn">+ My List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thumbnail Slider -->
+    <div class="thumbnail-slider">
+      <button class="nav-btn left" id="leftBtn">&#10094;</button>
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Thumbnails injected by JS -->
+        </div>
+      </div>
+      <button class="nav-btn right" id="rightBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Serials -->
+  <section class="serials-section">
+    <div class="serials-header">
+      <h2>Serials</h2>
+      <a href="#" class="serials-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="serials-wrapper">
+      <button class="serials-arrow left">&#10094;</button>
+
+      <div class="serials-track">
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <!-- Add more poster cards here -->
+      </div>
+
+      <button class="serials-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Shows -->
+  <section class="shows-section">
+    <div class="shows-header">
+      <h2>Shows</h2>
+      <a href="#" class="shows-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="shows-wrapper">
+      <button class="shows-arrow left">&#10094;</button>
+
+      <div class="shows-track">
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 1" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 2" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 3" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 4" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 5" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 6" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 7" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 8" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 9" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 10" /></div>
+      </div>
+
+      <button class="shows-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- event -->
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Events</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Classic TV Shows</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="serials-section">
+    <div class="serials-header">
+      <h2>Serials</h2>
+      <a href="#" class="serials-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="serials-wrapper">
+      <button class="serials-arrow left">&#10094;</button>
+
+      <div class="serials-track">
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <!-- Add more poster cards here -->
+      </div>
+
+      <button class="serials-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Shows -->
+  <section class="shows-section">
+    <div class="shows-header">
+      <h2>Shows</h2>
+      <a href="#" class="shows-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="shows-wrapper">
+      <button class="shows-arrow left">&#10094;</button>
+
+      <div class="shows-track">
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 1" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 2" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 3" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 4" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 5" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 6" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 7" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 8" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 9" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 10" /></div>
+      </div>
+
+      <button class="shows-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- event -->
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Events</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Classic TV Shows</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+
+  <section class="serials-section">
+    <div class="serials-header">
+      <h2>Serials</h2>
+      <a href="#" class="serials-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="serials-wrapper">
+      <button class="serials-arrow left">&#10094;</button>
+
+      <div class="serials-track">
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <!-- Add more poster cards here -->
+      </div>
+
+      <button class="serials-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Shows -->
+  <section class="shows-section">
+    <div class="shows-header">
+      <h2>Shows</h2>
+      <a href="#" class="shows-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="shows-wrapper">
+      <button class="shows-arrow left">&#10094;</button>
+
+      <div class="shows-track">
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 1" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 2" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 3" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 4" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 5" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 6" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 7" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 8" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 9" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 10" /></div>
+      </div>
+
+      <button class="shows-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- event -->
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Events</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Classic TV Shows</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+
+  <section class="serials-section">
+    <div class="serials-header">
+      <h2>Serials</h2>
+      <a href="#" class="serials-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="serials-wrapper">
+      <button class="serials-arrow left">&#10094;</button>
+
+      <div class="serials-track">
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 1" />
+        </div>
+        <div class="serials-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows54241/abhishekam/images/abhishekam-270x360.jpg"
+            alt="Serial 2" />
+        </div>
+        <!-- Add more poster cards here -->
+      </div>
+
+      <button class="serials-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Shows -->
+  <section class="shows-section">
+    <div class="shows-header">
+      <h2>Shows</h2>
+      <a href="#" class="shows-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="shows-wrapper">
+      <button class="shows-arrow left">&#10094;</button>
+
+      <div class="shows-track">
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 1" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 2" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 3" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 4" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 5" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 6" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 7" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 8" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 9" /></div>
+        <div class="shows-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/shows/shows26003/annadata/images/annadata-270x360.jpg"
+            alt="Show 10" /></div>
+      </div>
+
+      <button class="shows-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- event -->
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Events</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <div class="events-header">
+      <h2>Classic TV Shows</h2>
+      <a href="#" class="events-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="events-wrapper">
+      <button class="events-arrow left">&#10094;</button>
+
+      <div class="events-track">
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 1" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 2" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 3" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 4" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 5" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 6" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 7" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 8" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 9" /></div>
+        <div class="events-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows41067/etv-balagam/images/etv-balagam-270x360.jpg"
+            alt="Event 10" /></div>
+      </div>
+
+      <button class="events-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+
+  <!-- footer sec -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <ul class="footer-nav">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Redeem</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Subscription</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" alt="ETV Win Logo">
+        <p>© Eenadu Television Pvt. Ltd. 2025. All Rights Reserved</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Get in Touch with us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-apps">
+        <h4>Download App</h4>
+        <div class="app-buttons">
+          <img src="images/home page/play.jpg" alt="Google Play">
+          <img src="images/home page/app.jpg" alt="App Store">
+        </div>
+      </div>
+
+      <div class="footer-availability">
+        <h4>Also Available on</h4>
+        <div class="platform-logos">
+          <img src="images/home page/tvs_logos.png" alt="Fire TV">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="watch-free.js"></script>
+</body>
+
+</html>

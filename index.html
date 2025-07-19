@@ -1,0 +1,2187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ETV Win || Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" alt="ETV Win Logo">
+      <nav class="nav-menu">
+        <a href="index.html" class="active">HOME</a>
+        <a href="tv-shows.html">TV SHOWS</a>
+        <a href="movies.html">MOVIES</a>
+        <a href="watch-free.html">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburgerBtn">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" />
+        <span class="drawer-close" id="drawerCloseBtn">&times;</span>
+      </div>
+
+      <div class="drawer-buttons">
+        <a href="#" class="drawer-login">Login</a>
+
+        <div id="loginModal" class="modern-modal">
+          <div class="modern-overlay"></div>
+          <div class="login-card">
+            <span class="close-btn">&times;</span>
+            <h2>Welcome Back</h2>
+            <p>Log in to enjoy unlimited entertainment</p>
+
+            <div class="input-group">
+              <input type="text" placeholder="Email or Mobile Number" />
+            </div>
+            <div class="input-group">
+              <input type="password" placeholder="Password" />
+            </div>
+            <button class="login-action">Continue</button>
+
+            <div class="login-footer">
+              <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="subscribe.html" class="drawer-subscribe">Subscribe</a>
+      </div>
+
+      <nav class="drawer-menu">
+        <a href="index.html" class="active">HOME</a>
+        <a href="tv-shows.html">TV SHOWS</a>
+        <a href="movies.html">MOVIES</a>
+        <a href="watch-free.html">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <p>Download App</p>
+        <div class="store-icons">
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-google-play"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="nav-right">
+      <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <!-- <a href="#" class="login" id="openLogin">Login</a> -->
+
+      <!-- login popup -->
+      <!-- Login Modal -->
+      <a href="#" id="openLogin" class="login">Login</a>
+
+      <div id="loginModal" class="modern-modal">
+        <div class="modern-overlay"></div>
+        <div class="login-card">
+          <span class="close-btn">&times;</span>
+          <h2>Welcome Back</h2>
+          <p>Log in to enjoy unlimited entertainment</p>
+
+          <div class="input-group">
+            <input type="text" placeholder="Email or Mobile Number" />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button class="login-action">Continue</button>
+
+          <div class="login-footer">
+            <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+          </div>
+        </div>
+      </div>
+      <!-- 
+login popup end -->
+
+
+
+      <a href="subscribe.html" class="subscribe-btn">Subscribe</a>
+    </div>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="hero-bg" id="heroBg">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-title" id="heroTitle">Featured Show</h1>
+          <div class="hero-genres" id="heroGenres"></div>
+          <p class="hero-description" id="heroDescription"></p>
+          <div class="hero-buttons">
+            <button class="watch-btn">▶ Watch Now</button>
+            <button class="list-btn">+ My List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thumbnail Slider -->
+    <div class="thumbnail-slider">
+      <button class="nav-btn left" id="leftBtn">&#10094;</button>
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Thumbnails injected by JS -->
+        </div>
+      </div>
+      <button class="nav-btn right" id="rightBtn">&#10095;</button>
+    </div>
+  </section>
+  <!-- BEFORE TV SECTION -->
+  <!-- BEFORE TV SECTION -->
+  <section class="before-tv">
+    <div class="before-tv-header">
+      <h2>Before TV</h2> <a href="#" class="more-link">More »</a>
+    </div>
+    <div class="slider-wrapper"> <button class="slider-arrow left" id="beforeTvLeft">‹</button>
+      <div class="before-tv-slider" id="beforeTvSlider">
+        <!-- Repeat this block for each card -->
+        <!-- CARD 1 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows/dhee/subcategories/dhee20/episodes/s20epi08/83577/s20-epi-08-D20_17Jul25_EP_08-384x216.jpg"
+              alt="Show 1" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">S20 | Epi 08 | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/andaalarakshasi/subcategories/season1/episodes/epi16/59681/epi-16-ARK_17Jul25_EP_16-384x216.jpg"
+              alt="Show 2" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 16 | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/veyisubhamulukaluguneeku/subcategories/season1/episodes/epi46/55978/epi-46--VSKN_17Jul25_EP_46_-384x216.jpg"
+              alt="Show 3" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 46 | Veyi... | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/jhansi/subcategories/season1/episodes/epi154/91868/epi-154-JHNS_17Jul25_EP_154-384x216.jpg"
+              alt="Show 4" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 154 | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/merupukalalu/subcategories/season1/episodes/epi46/84863/epi-46--MKL_17Jul25_EP_46_-384x216.jpg"
+              alt="Show 5" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 46 | Meru... | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/manasanthanuvve/subcategories/season1/episodes/epi1094/20974/epi-1094-MSN_17Jul25_EP_1094-384x216.jpg"
+              alt="Show 6" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 1094 | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/bommarillu/subcategories/season1/episodes/epi220/98163/epi-220-BMR_17Jul25_EP_220-384x216.jpg"
+              alt="Show 7" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 220 | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/rangularatnam/subcategories/season1/episodes/epi1148/50815/epi-1148-RRTM_17Jul25_EP_1148-384x216.jpg"
+              alt="Show 8" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 221 | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/kalisundamraa/subcategories/season1/episodes/epi490/71162/epi-490-KSM_17Jul25_EP_490-384x216.jpg"
+              alt="Show 9" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 222 | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 10 -->
+        <div class="tv-card">
+          <div class="card-thumb">
+            <span class="lock">🔒</span>
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows/sadgurusai/subcategories/season1/episodes/epi1538/78154/epi-1538-SGS_17Jul25_EP_1538-384x216.jpg"
+              alt="Show 10" />
+            <span class="play-btn">▶</span>
+          </div>
+          <div class="card-meta">Epi 223 | 17 Jul 25</div>
+        </div>
+      </div>
+
+      <button class="slider-arrow right" id="beforeTvRight">›</button>
+    </div>
+  </section>
+
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>AIR Prabhanjanam</h2>
+    </div>
+    <div class="slider">
+      <div class="card">
+        <div class="thumbnail">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR Episode">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="info">
+          <p>First Episode Free</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumbnail">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/air/subcategories/season1/episodes/airtrailer/33845/air-trailer-Air_Trailer_Streaming_Now-270x360.jpg"
+            alt="AIR Trailer">
+          <div class="lock-icon">🔒</div>
+          <div class="play-icon">▶️</div>
+        </div>
+        <div class="info">
+          <p>AIR Trailer | 03 Jul 25</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumbnail">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/air/subcategories/season1/episodes/airteaser/80173/air-teaser-Air_30Sec-270x360.jpg"
+            alt="AIR Teaser">
+          <div class="lock-icon">🔒</div>
+          <div class="play-icon">▶️</div>
+        </div>
+        <div class="info">
+          <p>AIR Teaser | 03 Jul 25</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recently Added SECTION -->
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>Recently Added</h2>
+      <a href="#" class="more-link">More <span>»</span></a>
+    </div>
+
+    <div class="slider-container-1">
+      <button class="nav-arrow left-arrow">‹</button>
+
+      <div class="slider" id="recent-slider">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/santhosham/55183/santhosham-Santhosham_4K-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/23iravaimoodu/50355/23-iravai-moodu-23_Iravai_Moodu_4K-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/evialanatimudhu/99879/evi-alanati-mudhu-Evi_Alanati_Mudhu_4K-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/okabrundavanam/27579/oka-brundavanam-OKA_BRUNDAVANAM_MOVIE-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/kolla/51839/kolla-Kolla_Movie-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/premanteidikada/77431/premante-idi-kada-PremaAnteIdiKadha_4K-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/aaokkatiadakku/46619/aa-okkati-adakku-AOA_Movie-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/deardaddy/13697/dear-daddy-Dear_Daddy_4K-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/pellikaniprasad/16896/pelli-kani-prasad-Pelli_Kani_Prasad_Movie-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">First Episode Free</div>
+        </div>
+        <!-- Additional Cards -->
+        <!-- Repeat card divs with updated images/titles -->
+      </div>
+
+      <button class="nav-arrow right-arrow">›</button>
+    </div>
+  </section>
+
+
+  <!-- treanding now -->
+
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>Trending Now</h2>
+      <a href="#" class="more-link">More <span>»</span></a>
+    </div>
+
+    <div class="slider-container-trending">
+      <button class="nav-arrow left-arrow">‹</button>
+
+      <div class="slider" id="trending-slider">
+        <!-- CARD 1 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+              alt="AIR">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">AIR - First Episode Free</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/anaganaga/76218/anaganaga-Anaganaga_4K-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/23iravaimoodu/50355/23-iravai-moodu-23_Iravai_Moodu_4K-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/udvegam/33959/udvegam-Udvegam_4K-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/shows/shows73145/padutha-theeyaga/images/padutha-theeyaga-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/shows/shows17144/dhee/images/dhee-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/okabrundavanam/27579/oka-brundavanam-OKA_BRUNDAVANAM_MOVIE-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/committeekurrollu/58629/committee-kurrollu-Committee_Kurrollu_remaining-all-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/serials/shows85373/sadguru-sai/images/sadguru-sai-270x360.jpg"
+              alt="Santhosham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Santhosham</div>
+        </div>
+
+        <!-- Repeat similar blocks for other cards -->
+      </div>
+
+      <button class="nav-arrow right-arrow">›</button>
+    </div>
+  </section>
+
+  <!-- </section> -->
+  <!-- newww -->
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>Katha Sudha - Sunday Stories</h2>
+      <a href="#" class="more-link">More <span>»</span></a>
+    </div>
+
+    <div class="slider-container-2">
+      <button class="nav-arrow left-arrow">‹</button>
+
+      <div class="slider" id="sunday-slider">
+        <!-- Repeat this block for each card -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows17607/katha-sudha-a-weekly-series/images/katha-sudha-a-weekly-series-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/evialanatimudhu/99879/evi-alanati-mudhu-Evi_Alanati_Mudhu_4K-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/premanteidikada/77431/premante-idi-kada-PremaAnteIdiKadha_4K-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/deardaddy/13697/dear-daddy-Dear_Daddy_4K-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/amruthavalli/69370/amruthavalli-Amruthavalli_4K-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/naathicharaamai/43690/naathi-charaamai-Nathicharami_4K-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/callingbell/93351/calling-bell-Calling_bell_Movie-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/sundaramgadipremakatha/29035/sundaram-gadi-prema-katha-Sundaram_gadi_premakatha-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/penkutillu/82856/penkutillu-PENKUTILLU_4K-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows/kathasudhaaweeklyseries/subcategories/season1/episodes/tringtring/11059/tring-tring-Tring_Tring_4K-270x360.jpg"
+              alt="Card Title">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Title | 01 Jun 25</div>
+        </div>
+        <!-- ... repeat for all 10 cards ... -->
+      </div>
+
+      <button class="nav-arrow right-arrow">›</button>
+    </div>
+  </section>
+
+
+  <!-- 
+new -->
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>Raining Entertainers</h2>
+      <a href="#" class="more-link">More <span>»</span></a>
+    </div>
+
+    <div class="slider-container-raining">
+      <button class="nav-arrow left-arrow">‹</button>
+
+      <div class="slider" id="raining-slider">
+        <!-- CARD 1 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/anandam/21888/anandam-Anandam_Movie-270x360.jpg"
+              alt="Aandham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Aandham</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitram/51938/chitram-Chitram_Movie-270x360.jpg"
+              alt="Sitara">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Sitara</div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/rotikapadaromance/96449/roti-kapada-romance-RKR_4K-270x360.jpg"
+              alt="Roti Kosam Raghu">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Roti Kosam Raghu</div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows41492/sasimadhanam/images/sasimadhanam-270x360.jpg"
+              alt="Madham">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Madham</div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nachavule/23918/nachavule-Nachavule_Movie-270x360.jpg"
+              alt="Swapnalokam">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Swapnalokam</div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/srivarikipremalekha/77467/srivariki-premalekha-Srivariki_Premalekha_Movie-270x360.jpg"
+              alt="Sree Prema">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Sree Prema</div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvekavali/23736/nuvve-kavali-Nuvve_Kavali_Movie-270x360.jpg"
+              alt="Swapna Kalalu">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Swapna Kalalu</div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/akkadaammayiikkadaabbayi/83569/akkada-ammayi-ikkada-abbayi-AAIA_4K_Dolby-270x360.jpg"
+              alt="Alludu Adabbay">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Alludu Adabbay</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/okabrundavanam/27579/oka-brundavanam-OKA_BRUNDAVANAM_MOVIE-270x360.jpg"
+              alt="Alludu Adabbay">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Alludu Adabbay</div>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/okabrundavanam/27579/oka-brundavanam-OKA_BRUNDAVANAM_MOVIE-270x360.jpg"
+              alt="Bhagyakaram">
+            <div class="lock-icon">🔒</div>
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">Bhagyakaram</div>
+        </div>
+      </div>
+
+      <button class="nav-arrow right-arrow">›</button>
+    </div>
+  </section>
+
+
+  <!-- new -->
+  <section class="originals-section">
+    <div class="originals-header">
+      <h2>Win Originals</h2>
+      <a href="#" class="originals-more">More <span class="originals-more-icon">»</span></a>
+    </div>
+
+    <div class="originals-slider">
+      <button class="originals-arrow originals-prev">‹</button>
+
+      <div class="originals-track" id="originalsTrack">
+        <div class="originals-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-1960x600.jpg"
+            alt="AIR">
+        </div>
+        <div class="originals-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/anaganaga/76218/anaganaga-Anaganaga_4K-1960x600.jpg"
+            alt="Yashoda">
+        </div>
+        <div class="originals-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-1960x600.jpg"
+            alt="AIR">
+        </div>
+        <div class="originals-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/anaganaga/76218/anaganaga-Anaganaga_4K-1960x600.jpg"
+            alt="Yashoda">
+        </div>
+        <div class="originals-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-1960x600.jpg"
+            alt="AIR">
+        </div>
+        <div class="originals-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/anaganaga/76218/anaganaga-Anaganaga_4K-1960x600.jpg"
+            alt="Yashoda">
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="originals-arrow originals-next">›</button>
+    </div>
+  </section>
+
+
+
+
+  <!-- 
+new -->
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>Cult Classics</h2>
+      <a href="#" class="more-link">More <span>»</span></a>
+    </div>
+
+    <div class="slider-container-cult">
+      <button class="nav-arrow left-arrow">‹</button>
+
+      <div class="slider" id="cult-slider">
+        <!-- Repeat for each card -->
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayabazar/87117/mayabazar-Mayabazar_Movie-270x360.jpg"
+              alt="మాయాబజార్">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="info">మాయాబజార్</div>
+        </div>
+        <!-- ... -->
+      </div>
+
+      <button class="nav-arrow right-arrow">›</button>
+    </div>
+  </section>
+
+  <!-- 
+  new -->
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>Block Buster Hits</h2>
+      <a href="#" class="more-link">More <span>»</span></a>
+    </div>
+
+    <div class="slider-container-hits">
+      <button class="nav-arrow left-arrow">‹</button>
+
+      <div class="slider" id="hits-slider">
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="thumbnail">
+            <img src="https://etv-win-image.akamaized.net/etvwin/telugumovies/fidaa/68918/fidaa-Fidaa_Movie-270x360.jpg"
+              alt="ఆల మోదలైందీ">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="nav-arrow right-arrow">›</button>
+    </div>
+  </section>
+
+
+  <!-- new -->
+  <section class="section-wrapper">
+    <div class="section-header">
+      <h2>Award Winning</h2>
+      <a href="#" class="more-link">More <span>»</span></a>
+    </div>
+
+    <div class="slider-container award-slider-container">
+      <button class="nav-arrow left-arrow">‹</button>
+
+      <div class="slider" id="award-slider">
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Matyam">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Golconda">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Matyam">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Golconda">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Matyam">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Golconda">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Matyam">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Golconda">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Matyam">
+          <div class="lock-icon">🔒</div>
+        </div>
+        <div class="card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/originalmovies/muthayya/20128/muthayya-MUTHAYYA_Movie_4k-270x360.jpg"
+            alt="Golconda">
+          <div class="lock-icon">🔒</div>
+        </div>
+
+      </div>
+
+      <button class="nav-arrow right-arrow">›</button>
+    </div>
+  </section>
+  <!-- 
+
+new -->
+
+  <section class="kids-section">
+    <div class="kids-header">
+      <h2>ETV Bal Bharat Kids</h2>
+    </div>
+
+    <div class="kids-slider-wrapper">
+      <button class="kids-arrow kids-left">‹</button>
+
+      <div class="kids-track" id="kidsTrack">
+        <!-- Card 1 -->
+        <div class="kids-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/kids/shows66888/abhimanyu/images/abhimanyu-1960x600.jpg"
+            alt="Abhimanyu">
+        </div>
+
+        <!-- Card 2 -->
+        <div class="kids-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/kids/shows66888/abhimanyu/images/abhimanyu-1960x600.jpg"
+            alt="Bal Bahubali">
+        </div>
+
+        <div class="kids-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/kids/shows66888/abhimanyu/images/abhimanyu-1960x600.jpg"
+            alt="Bal Bahubali">
+        </div>
+
+        <div class="kids-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/kids/shows66888/abhimanyu/images/abhimanyu-1960x600.jpg"
+            alt="Bal Bahubali">
+        </div>
+      </div>
+
+      <button class="kids-arrow kids-right">›</button>
+    </div>
+  </section>
+
+  <!-- new -->
+  <section class="tvshows-section">
+    <div class="tvshows-header">
+      <h2>TV Shows</h2>
+      <a href="#" class="tvshows-more">More <span>»</span></a>
+    </div>
+
+    <div class="tvshows-slider-wrapper">
+      <button class="tvshows-arrow tvshows-left">‹</button>
+
+      <div class="tvshows-track" id="tvshowsTrack">
+
+        <div class="tvshows-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-1960x600.jpg"
+            alt="Rangula Ratnam" />
+        </div>
+
+        <div class="tvshows-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-1960x600.jpg"
+            alt="Rangula Ratnam" />
+        </div>
+
+
+        <div class="tvshows-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-1960x600.jpg"
+            alt="Rangula Ratnam" />
+        </div>
+
+
+        <div class="tvshows-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/serials/shows56141/manasantha-nuvve/images/manasantha-nuvve-1960x600.jpg"
+            alt="Rangula Ratnam" />
+        </div>
+        <!-- Add more cards here if needed -->
+      </div>
+
+      <button class="tvshows-arrow tvshows-right">›</button>
+    </div>
+  </section>
+
+
+
+
+  <!-- new -->
+  <section class="latest-news-wrapper">
+    <div class="latest-news-header">
+      <h2>Latest News</h2>
+    </div>
+
+    <div class="latest-news-slider-container">
+      <button class="latest-news-arrow latest-news-left">‹</button>
+
+      <div class="latest-news-slider" id="latestNewsSlider">
+        <!-- Repeatable Card -->
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="4 PM News" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">4 PM | ETV Digital | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="12 PM News Telangana" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">ETV TS | 12 N... | 17 Jul 25</div>
+        </div>
+
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="4 PM News" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">4 PM | ETV Digital | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="12 PM News Telangana" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">ETV TS | 12 N... | 17 Jul 25</div>
+        </div>
+
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="4 PM News" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">4 PM | ETV Digital | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="12 PM News Telangana" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">ETV TS | 12 N... | 17 Jul 25</div>
+        </div>
+
+
+
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="4 PM News" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">4 PM | ETV Digital | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="12 PM News Telangana" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">ETV TS | 12 N... | 17 Jul 25</div>
+        </div>
+
+
+
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="4 PM News" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">4 PM | ETV Digital | 17 Jul 25</div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-small">
+          <div class="thumbnail">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/news/shows/etvnews/episodes/4pmetvdigitalexclusivenews17july25/44460/4-pm-etv-digital-exclusive-news-17-july-25-ETV_4PM_17Jul25-384x216.jpg"
+              alt="12 PM News Telangana" />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="info">ETV TS | 12 N... | 17 Jul 25</div>
+        </div>
+
+        <!-- Add more news cards below -->
+        <!-- ... -->
+      </div>
+
+      <button class="latest-news-arrow latest-news-right">›</button>
+    </div>
+  </section>
+
+
+
+  <!-- new -->
+  <section class="live-tv-wrapper">
+    <div class="live-tv-header">
+      <h2>Live TV</h2>
+    </div>
+
+    <div class="live-tv-slider-container">
+      <button class="live-tv-arrow live-tv-left">‹</button>
+
+      <div class="live-tv-slider" id="liveTvSlider">
+        <!-- Repeatable Card -->
+        <div class="live-tv-card">
+          <div class="live-tv-thumbnail">
+            <span class="live-tv-lock">🔒</span>
+            <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/75116/etv-telugu-270x360.jpg" alt="ETV" />
+            <span class="live-tv-badge">● LIVE</span>
+          </div>
+        </div>
+
+        <div class="live-tv-card">
+          <div class="live-tv-thumbnail">
+            <span class="live-tv-lock">🔒</span>
+            <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/75116/etv-telugu-270x360.jpg"
+              alt="ETV Plus" />
+            <span class="live-tv-badge">● LIVE</span>
+          </div>
+        </div>
+
+        <div class="live-tv-card">
+          <div class="live-tv-thumbnail">
+            <span class="live-tv-lock">🔒</span>
+            <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/75116/etv-telugu-270x360.jpg"
+              alt="ETV Cinema" />
+            <span class="live-tv-badge">● LIVE</span>
+          </div>
+        </div>
+
+        <div class="live-tv-card">
+          <div class="live-tv-thumbnail">
+            <span class="live-tv-lock">🔒</span>
+            <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/75116/etv-telugu-270x360.jpg"
+              alt="ETV AP" />
+            <span class="live-tv-badge">● LIVE</span>
+          </div>
+        </div>
+
+        <div class="live-tv-card">
+          <div class="live-tv-thumbnail">
+            <span class="live-tv-lock">🔒</span>
+            <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/75116/etv-telugu-270x360.jpg"
+              alt="ETV TS" />
+            <span class="live-tv-badge">● LIVE</span>
+          </div>
+        </div>
+
+        <div class="live-tv-card">
+          <div class="live-tv-thumbnail">
+            <span class="live-tv-lock">🔒</span>
+            <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/75116/etv-telugu-270x360.jpg"
+              alt="ETV Abhiruchi" />
+            <span class="live-tv-badge">● LIVE</span>
+          </div>
+        </div>
+
+        <div class="live-tv-card">
+          <div class="live-tv-thumbnail">
+            <span class="live-tv-lock">🔒</span>
+            <img src="https://etv-win-image.akamaized.net/etvwin/live/channel/75116/etv-telugu-270x360.jpg"
+              alt="ETV Life" />
+            <span class="live-tv-badge">● LIVE</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="live-tv-arrow live-tv-right">›</button>
+    </div>
+  </section>
+
+
+
+  <!-- new -->
+  <section class="reco-section">
+    <div class="reco-header">
+      <h2>Recommended For You</h2>
+      <a href="#" class="reco-more">More <span>»</span></a>
+    </div>
+
+    <div class="reco-slider-container">
+      <button class="reco-arrow reco-left">‹</button>
+
+      <div class="reco-slider" id="recoSlider">
+        <!-- Card start -->
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Bala Sangeetham">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Epi 01 | Bala... | 22 Jun 25</div>
+        </div>
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Champions Darbar">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Epi 01 | 31 Dec 24</div>
+        </div>
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+
+        <div class="reco-card">
+          <div class="reco-img-wrap">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/events/shows/balaghandharvamlma26/subcategories/season1/episodes/epi01/21025/epi-01-BGVM_22Jun25_EP_01-384x216.jpg"
+              alt="Swarabhishekam">
+            <span class="reco-play">▶</span>
+          </div>
+          <div class="reco-meta">Swarabhisheka... | 08 Jun 25</div>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="reco-arrow reco-right">›</button>
+    </div>
+  </section>
+
+
+
+  <!-- new -->
+  <section class="comedy-section">
+    <div class="comedy-header">
+      <h2 class="comedy-title">Comedy</h2>
+      <a href="#" class="comedy-more-link">More<span> ››</span></a>
+    </div>
+
+    <div class="comedy-carousel-wrapper">
+      <button class="comedy-arrow comedy-left">‹</button>
+
+      <div class="comedy-carousel-track">
+        <!-- Comedy Card 1 -->
+        <div class="comedy-slide">
+          <div class="comedy-image-container">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt="Comedy Show 1">
+          </div>
+        </div>
+
+        <!-- Repeat as needed -->
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+        <div class="comedy-slide">
+          <div class="comedy-image-container"><img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/chitrambhalarevichitram/39373/chitram-bhalare-vichitram-Chitram_Bhalare_Vichitram_Movie-270x360.jpg"
+              alt=""></div>
+        </div>
+      </div>
+
+      <button class="comedy-arrow comedy-right">›</button>
+    </div>
+  </section>
+
+
+  <!-- romance  sec -->
+  <section class="romance-section">
+    <div class="romance-header">
+      <h2 class="romance-title">Romance</h2>
+      <a href="#" class="romance-more-link">More<span> ››</span></a>
+    </div>
+
+    <div class="romance-carousel-wrapper">
+      <button class="romance-arrow romance-left">‹</button>
+
+      <div class="romance-carousel-track">
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 1"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 2"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 3"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 4"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 5"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 6"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 7"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 8"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 9"></div>
+        <div class="romance-slide"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gitanjali/19181/gitanjali-Gitanjali_Movie-270x360.jpg"
+            alt="Romance 10"></div>
+      </div>
+
+      <button class="romance-arrow romance-right">›</button>
+    </div>
+  </section>
+
+
+  <!-- classsic sec -->
+  <section class="classics-slider-section">
+    <div class="classics-slider-header">
+      <h2>Classic's</h2>
+      <a href="#" class="classics-slider-more">More<span> ››</span></a>
+    </div>
+
+    <div class="classics-slider-container">
+      <button class="classics-slider-arrow classics-arrow-left">‹</button>
+
+      <div class="classics-slider-track">
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 1"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 2"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 3"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 4"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 5"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 6"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 7"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 8"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 9"></div>
+        <div class="classics-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/mayuri/49467/mayuri-Mayuri_Movie-270x360.jpg"
+            alt="Classic 10"></div>
+      </div>
+
+      <button class="classics-slider-arrow classics-arrow-right">›</button>
+    </div>
+  </section>
+
+  <!-- 
+folklore sec -->
+
+  <section class="folklore-slider-section">
+    <div class="folklore-slider-header">
+      <h2>Folklore</h2>
+      <a href="#" class="folklore-slider-more">More<span> ››</span></a>
+    </div>
+
+    <div class="folklore-slider-container">
+      <button class="folklore-slider-arrow folklore-arrow-left">‹</button>
+
+      <div class="folklore-slider-track">
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Jagadeka Veerudu"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Madana Manjari"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Savitri Sundari"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Sampoorna Ramayanam"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Aggibettina Alludu"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Mahashakti"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Daanavakula Katha"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Simha Baludu"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Navamohini"></div>
+        <div class="folklore-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/jaganmohini/66702/jaganmohini-Jagan_Mohini_Movie-270x360.jpg"
+            alt="Jagadeka Veerudu"></div>
+      </div>
+
+      <button class="folklore-slider-arrow folklore-arrow-right">›</button>
+    </div>
+  </section>
+
+
+  <!-- family sec -->
+  <section class="family-slider-section">
+    <div class="family-slider-header">
+      <h2>Family</h2>
+      <a href="#" class="family-slider-more">More<span> ››</span></a>
+    </div>
+
+    <div class="family-slider-container">
+      <button class="family-slider-arrow family-arrow-left">‹</button>
+
+      <div class="family-slider-track">
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Karthikeya"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Maa Pellikoothuru"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Manasu Mamatha"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Muhurtham"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Classmates"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Suryavamsham"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Alasyam Amrutham"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Veedhi"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Mee Sreyobhilashi"></div>
+        <div class="family-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/korikalegurralaite/70187/korikale-gurralaite-Korikale_Gurralaite_Movie-270x360.jpg"
+            alt="Karthikeya"></div>
+      </div>
+
+      <button class="family-slider-arrow family-arrow-right">›</button>
+    </div>
+  </section>
+
+  <!-- action sec -->
+
+  <section class="thriller-slider-section">
+    <div class="thriller-slider-header">
+      <h2>Action / Thriller</h2>
+      <a href="#" class="thriller-slider-more">More<span> ››</span></a>
+    </div>
+
+    <div class="thriller-slider-container">
+      <button class="thriller-slider-arrow thriller-arrow-left">‹</button>
+
+      <div class="thriller-slider-track">
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Adavi Donga"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Venkatadri Express"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Jagadam"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Killer"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Bhadra"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Rough Fellow"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Shakti"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Flash News"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Chandramukhi Returns"></div>
+        <div class="thriller-card"><img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/adavidonga/96019/adavi-donga-Adavi_Donga_Movie-270x360.jpg"
+            alt="Adavi Donga"></div>
+      </div>
+
+      <button class="thriller-slider-arrow thriller-arrow-right">›</button>
+    </div>
+  </section>
+
+
+  <!-- Ugadi Utsavam -->
+  <section class="ugadi-slider-section">
+    <div class="ugadi-slider-header">
+      <h2>Ugadi Utsavam</h2>
+      <a href="#" class="ugadi-slider-more">More<span> ››</span></a>
+    </div>
+
+    <div class="ugadi-slider-container">
+      <button class="ugadi-slider-arrow ugadi-arrow-left">‹</button>
+
+      <div class="ugadi-slider-track">
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Anaganaga Ugadi">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Anaganaga Ugadi | 30 Mar</div>
+          </div>
+        </div>
+        <div class="ugadi-card">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/events/shows/etvugadievents/subcategories/anaganagaeeugadhi/episodes/epi01/42669/epi-01-AEU_30Mar25_EP_01-270x360.jpg"
+            alt="Ee Sambaralu Mee Kosam">
+          <div class="ugadi-overlay">
+            <div class="ugadi-play-icon">▶</div>
+            <div class="ugadi-episode-title">Epi 01 | Ee Sambaralu | 09 Apr</div>
+          </div>
+        </div>
+        <!-- Repeat similar blocks for each card -->
+      </div>
+
+      <button class="ugadi-slider-arrow ugadi-arrow-right">›</button>
+    </div>
+  </section>
+
+
+  <!-- All Time Classics -->
+  <section class="slider-classics">
+    <div class="slider-classics-header">
+      <h2>All Time Classics</h2>
+      <a href="#" class="slider-classics-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="slider-classics-wrapper">
+      <button class="slider-classics-arrow left">&lsaquo;</button>
+
+      <div class="slider-classics-track">
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 1">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 2">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 3">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 4">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 1">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 2">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 3">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 4">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 5">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 6">
+        </div>
+        <div class="slider-classics-item">
+          <img
+            src="https://etv-win-image.akamaized.net/etvwin/telugumovies/missamma/92300/missamma-Missamma_Movie-270x360.jpg"
+            alt="Classic 7">
+        </div>
+      </div>
+
+      <button class="slider-classics-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+
+
+  <!-- footer sec -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <ul class="footer-nav">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Redeem</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Subscription</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" alt="ETV Win Logo">
+        <p>© Eenadu Television Pvt. Ltd. 2025. All Rights Reserved</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Get in Touch with us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-apps">
+        <h4>Download App</h4>
+        <div class="app-buttons">
+          <img src="images/home page/play.jpg" alt="Google Play">
+          <img src="images/home page/app.jpg" alt="App Store">
+        </div>
+      </div>
+
+      <div class="footer-availability">
+        <h4>Also Available on</h4>
+        <div class="platform-logos">
+          <img src="images/home page/tvs_logos.png" alt="Fire TV">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

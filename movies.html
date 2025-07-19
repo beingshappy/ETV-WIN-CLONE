@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETV Win || Movies</title>
+  <link rel="stylesheet" href="movies.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+
+
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" alt="ETV Win Logo">
+      <nav class="nav-menu">
+        <a href="index.html" >HOME</a>
+        <a href="tv-shows.html">TV SHOWS</a>
+        <a href="movies.html" class="active">MOVIES</a>
+        <a href="watch-free.html">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+    </div>
+
+    <!-- Hamburger for mobile -->
+    <div class="hamburger" id="hamburgerBtn">
+      <i class="fa fa-bars"></i>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="drawer-header">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" />
+        <span class="drawer-close" id="drawerCloseBtn">&times;</span>
+      </div>
+
+      <div class="drawer-buttons">
+        <a href="#" class="drawer-login">Login</a>
+
+        <div id="loginModal" class="modern-modal">
+          <div class="modern-overlay"></div>
+          <div class="login-card">
+            <span class="close-btn">&times;</span>
+            <h2>Welcome Back</h2>
+            <p>Log in to enjoy unlimited entertainment</p>
+
+            <div class="input-group">
+              <input type="text" placeholder="Email or Mobile Number" />
+            </div>
+            <div class="input-group">
+              <input type="password" placeholder="Password" />
+            </div>
+            <button class="login-action">Continue</button>
+
+            <div class="login-footer">
+              <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="subscribe.html" class="drawer-subscribe">Subscribe</a>
+      </div>
+
+      <nav class="drawer-menu">
+        <a href="index.html" class="active">HOME</a>
+        <a href="tv-shows.html">TV SHOWS</a>
+        <a href="movies.html">MOVIES</a>
+        <a href="watch-free.html">WATCH FREE</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <p>Download App</p>
+        <div class="store-icons">
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-google-play"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="nav-right">
+      <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <!-- <a href="#" class="login" id="openLogin">Login</a> -->
+
+      <!-- login popup -->
+      <!-- Login Modal -->
+      <a href="#" id="openLogin" class="login">Login</a>
+
+      <div id="loginModal" class="modern-modal">
+        <div class="modern-overlay"></div>
+        <div class="login-card">
+          <span class="close-btn">&times;</span>
+          <h2>Welcome Back</h2>
+          <p>Log in to enjoy unlimited entertainment</p>
+
+          <div class="input-group">
+            <input type="text" placeholder="Email or Mobile Number" />
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button class="login-action">Continue</button>
+
+          <div class="login-footer">
+            <a href="#">Forgot Password?</a> • <a href="#">Register</a>
+          </div>
+        </div>
+      </div>
+      <!-- 
+login popup end -->
+
+
+
+      <a href="subscribe.html" class="subscribe-btn">Subscribe</a>
+    </div>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="hero-bg" id="heroBg">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-title" id="heroTitle">Featured Show</h1>
+          <div class="hero-genres" id="heroGenres"></div>
+          <p class="hero-description" id="heroDescription"></p>
+          <div class="hero-buttons">
+            <button class="watch-btn">▶ Watch Now</button>
+            <button class="list-btn">+ My List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thumbnail Slider -->
+    <div class="thumbnail-slider">
+      <button class="nav-btn left" id="leftBtn">&#10094;</button>
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Thumbnails injected by JS -->
+        </div>
+      </div>
+      <button class="nav-btn right" id="rightBtn">&#10095;</button>
+    </div>
+  </section>
+
+
+  <!-- Trending Now -->
+  <section class="trendnow-sec">
+    <div class="trendnow-header">
+      <h2 class="trendnow-title">Trending Now</h2>
+      <a href="#" class="trendnow-more">More »</a>
+    </div>
+
+    <div class="trendnow-wrapper">
+      <button class="trendnow-arrow left" id="trendnowLeft">‹</button>
+
+      <div class="trendnow-scroll" id="trendnowScrollContainer">
+        <!-- Card -->
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="AIR" />
+        </div>
+
+        <div class="trendnow-card">
+          <img src="https://etv-win-image.akamaized.net/etvwin/exclusives/shows42655/air/images/air-270x360.jpg"
+            alt="Family Stars" />
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+
+      <button class="trendnow-arrow right" id="trendnowRight">›</button>
+    </div>
+  </section>
+
+  <!-- Popular / Most Watched -->
+
+  <section class="popular-section">
+    <div class="popular-section-header">
+      <h2>Popular / Most Watched</h2>
+      <a href="#" class="popular-more-link">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="popular-slider-wrapper">
+      <button class="popular-slider-arrow left">&lsaquo;</button>
+
+      <div class="popular-slider-track">
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 1">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">గుండమ్మకథ</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+        <div class="popular-card">
+          <div class="popular-card-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/gundammakatha/11402/gundamma-katha-Gundamma_Katha_Movie-270x360.jpg"
+              alt="Movie 2">
+            <div class="popular-lock-icon">🔒</div>
+          </div>
+          <div class="popular-card-title">మాయాబజార్</div>
+        </div>
+
+
+
+        <!-- Repeat more cards as needed -->
+
+      </div>
+
+      <button class="popular-slider-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+  <!-- 
+Summer Special -->
+  <section class="summer-special-section">
+    <div class="summer-special-header">
+      <h2>Summer Special</h2>
+      <a href="#" class="summer-special-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="summer-special-wrapper">
+      <button class="summer-arrow left">&lsaquo;</button>
+
+      <div class="summer-track">
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">వీరాంజనేయులు...</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <div class="summer-card">
+          <div class="summer-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/veeranjaneyuluviharayatramovie/36162/veeranjaneyulu-viharayatra-movie-Veerajaneyulu_Viharayatra_Movie_b2b-270x360.jpg"
+              alt="Movie 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+          <div class="summer-title">ఫాండ్రిలిస్టర్</div>
+        </div>
+        <!-- Repeat for all cards -->
+      </div>
+
+      <button class="summer-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+
+  <!-- Win Originals -->
+  <section class="win-originals-section">
+    <div class="win-originals-header">
+      <h2>Win Originals</h2>
+      <a href="#" class="win-originals-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="win-originals-wrapper">
+      <button class="win-arrow left">&lsaquo;</button>
+
+      <div class="win-track">
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <!-- Add more .win-card blocks -->
+      </div>
+
+      <button class="win-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+
+  <!-- Evergreen Hits -->
+
+  <section class="evergreen-section">
+    <div class="evergreen-header">
+      <h2>Evergreen Hits</h2>
+      <a href="#" class="evergreen-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="evergreen-wrapper">
+      <button class="evergreen-arrow left">&#10094;</button>
+
+      <div class="evergreen-track">
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- Add more poster cards as needed -->
+      </div>
+
+      <button class="evergreen-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Musical Hits -->
+  <section class="musical-section">
+    <div class="musical-header">
+      <h2>Musical Hits</h2>
+      <a href="#" class="musical-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="musical-wrapper">
+      <button class="musical-arrow left">&#10094;</button>
+
+      <div class="musical-track">
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- More cards can be added -->
+      </div>
+
+      <button class="musical-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Win Originals -->
+  <section class="win-originals-section">
+    <div class="win-originals-header">
+      <h2>Win Originals</h2>
+      <a href="#" class="win-originals-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="win-originals-wrapper">
+      <button class="win-arrow left">&lsaquo;</button>
+
+      <div class="win-track">
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <!-- Add more .win-card blocks -->
+      </div>
+
+      <button class="win-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+
+  <!-- Evergreen Hits -->
+
+  <section class="evergreen-section">
+    <div class="evergreen-header">
+      <h2>Evergreen Hits</h2>
+      <a href="#" class="evergreen-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="evergreen-wrapper">
+      <button class="evergreen-arrow left">&#10094;</button>
+
+      <div class="evergreen-track">
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- Add more poster cards as needed -->
+      </div>
+
+      <button class="evergreen-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Musical Hits -->
+  <section class="musical-section">
+    <div class="musical-header">
+      <h2>Musical Hits</h2>
+      <a href="#" class="musical-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="musical-wrapper">
+      <button class="musical-arrow left">&#10094;</button>
+
+      <div class="musical-track">
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- More cards can be added -->
+      </div>
+
+      <button class="musical-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Win Originals -->
+  <section class="win-originals-section">
+    <div class="win-originals-header">
+      <h2>Win Originals</h2>
+      <a href="#" class="win-originals-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="win-originals-wrapper">
+      <button class="win-arrow left">&lsaquo;</button>
+
+      <div class="win-track">
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <!-- Add more .win-card blocks -->
+      </div>
+
+      <button class="win-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+
+  <!-- Evergreen Hits -->
+
+  <section class="evergreen-section">
+    <div class="evergreen-header">
+      <h2>Evergreen Hits</h2>
+      <a href="#" class="evergreen-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="evergreen-wrapper">
+      <button class="evergreen-arrow left">&#10094;</button>
+
+      <div class="evergreen-track">
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- Add more poster cards as needed -->
+      </div>
+
+      <button class="evergreen-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Musical Hits -->
+  <section class="musical-section">
+    <div class="musical-header">
+      <h2>Musical Hits</h2>
+      <a href="#" class="musical-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="musical-wrapper">
+      <button class="musical-arrow left">&#10094;</button>
+
+      <div class="musical-track">
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- More cards can be added -->
+      </div>
+
+      <button class="musical-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Win Originals -->
+  <section class="win-originals-section">
+    <div class="win-originals-header">
+      <h2>Win Originals</h2>
+      <a href="#" class="win-originals-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="win-originals-wrapper">
+      <button class="win-arrow left">&lsaquo;</button>
+
+      <div class="win-track">
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <!-- Add more .win-card blocks -->
+      </div>
+
+      <button class="win-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+
+  <!-- Evergreen Hits -->
+
+  <section class="evergreen-section">
+    <div class="evergreen-header">
+      <h2>Evergreen Hits</h2>
+      <a href="#" class="evergreen-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="evergreen-wrapper">
+      <button class="evergreen-arrow left">&#10094;</button>
+
+      <div class="evergreen-track">
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- Add more poster cards as needed -->
+      </div>
+
+      <button class="evergreen-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Musical Hits -->
+  <section class="musical-section">
+    <div class="musical-header">
+      <h2>Musical Hits</h2>
+      <a href="#" class="musical-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="musical-wrapper">
+      <button class="musical-arrow left">&#10094;</button>
+
+      <div class="musical-track">
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- More cards can be added -->
+      </div>
+
+      <button class="musical-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Win Originals -->
+  <section class="win-originals-section">
+    <div class="win-originals-header">
+      <h2>Win Originals</h2>
+      <a href="#" class="win-originals-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="win-originals-wrapper">
+      <button class="win-arrow left">&lsaquo;</button>
+
+      <div class="win-track">
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 1">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <div class="win-card">
+          <div class="win-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/originalmovies/madhushala/24221/madhushala-Madhushala_4K-270x360.jpg"
+              alt="Poster 2">
+            <div class="lock-icon">🔒</div>
+          </div>
+        </div>
+
+        <!-- Add more .win-card blocks -->
+      </div>
+
+      <button class="win-arrow right">&rsaquo;</button>
+    </div>
+  </section>
+
+  <!-- Evergreen Hits -->
+
+  <section class="evergreen-section">
+    <div class="evergreen-header">
+      <h2>Evergreen Hits</h2>
+      <a href="#" class="evergreen-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="evergreen-wrapper">
+      <button class="evergreen-arrow left">&#10094;</button>
+
+      <div class="evergreen-track">
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="evergreen-card">
+          <div class="evergreen-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/nuvvila/12633/nuvvila-Nuvvila_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- Add more poster cards as needed -->
+      </div>
+
+      <button class="evergreen-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Musical Hits -->
+  <section class="musical-section">
+    <div class="musical-header">
+      <h2>Musical Hits</h2>
+      <a href="#" class="musical-more">More <span>&raquo;&raquo;</span></a>
+    </div>
+
+    <div class="musical-wrapper">
+      <button class="musical-arrow left">&#10094;</button>
+
+      <div class="musical-track">
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 1">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <div class="musical-card">
+          <div class="musical-thumb">
+            <img
+              src="https://etv-win-image.akamaized.net/etvwin/telugumovies/sammohanam/94179/sammohanam-Sammohanam_Movie-270x360.jpg"
+              alt="Poster 2">
+            <span class="lock-icon">🔒</span>
+          </div>
+        </div>
+        <!-- More cards can be added -->
+      </div>
+
+      <button class="musical-arrow right">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- footer sec -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <ul class="footer-nav">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Redeem</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Subscription</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img src="https://www.etvwin.com/images/etv-logo-new.png" alt="ETV Win Logo">
+        <p>© Eenadu Television Pvt. Ltd. 2025. All Rights Reserved</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Get in Touch with us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-apps">
+        <h4>Download App</h4>
+        <div class="app-buttons">
+          <img src="images/home page/play.jpg" alt="Google Play">
+          <img src="images/home page/app.jpg" alt="App Store">
+        </div>
+      </div>
+
+      <div class="footer-availability">
+        <h4>Also Available on</h4>
+        <div class="platform-logos">
+          <img src="images/home page/tvs_logos.png" alt="Fire TV">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="movies.js"></script>
+</body>
+
+</html>
