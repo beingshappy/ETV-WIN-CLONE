@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ETV Win || Kids</title>
-  <link rel="stylesheet" href="kids.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ETV Win || Feedback</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+     <!-- Navbar -->
   <header class="navbar">
     <div class="nav-left">
       <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" alt="ETV Win Logo">
       <nav class="nav-menu">
-        <a href="index.html" class="active">HOME</a>
+        <a href="index.html">HOME</a>
         <a href="tv-shows.html">TV SHOWS</a>
         <a href="movies.html">MOVIES</a>
         <a href="watch-free.html">WATCH FREE</a>
@@ -63,12 +62,12 @@
       </div>
 
       <nav class="drawer-menu">
-         <a href="index.html" >HOME</a>
+        <a href="index.html" class="active">HOME</a>
         <a href="tv-shows.html">TV SHOWS</a>
         <a href="movies.html">MOVIES</a>
         <a href="watch-free.html">WATCH FREE</a>
-        <a href="live-tv.html" >LIVE TV</a>
-        <a href="kids.html" class="active">KIDS</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
       </nav>
 
       <div class="drawer-footer">
@@ -120,39 +119,50 @@ login popup end -->
     </div>
   </header>
 
-  <section class="kids-section">
-    <h2 class="section-title">ETV Bal Bharat Kids</h2>
+  <section class="feedback-section">
+  <h2 class="feedback-title">Feedback</h2>
+  <div class="feedback-content">
 
-    <div class="kids-slider">
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Abhimanyu" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Bal Bahubali" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Choti Lambu and Robu" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Wisdom Tree" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Bonus Kids Show" />
-      </div>
+    <!-- Left Info Panel -->
+    <div class="feedback-info">
+      <img src="https://www.etvwin.com/images/contactus.png" alt="ETV Win Location" class="feedback-img" />
+      <h3 class="info-title">ETV Win</h3>
+      <p class="info-text">ETV Building 2nd Floor Ramoji Film City</p>
+      <p class="info-text">Hyderabad - 501512 - Telangana - India</p>
+      <p class="info-text">Phone: +91 8142212345, &nbsp; +91 8008020555</p>
+      <p class="info-text">Mon–Sun 7 AM - 10 PM (IST)</p>
+      <p class="info-text">
+        Email:
+        <a href="mailto:contact@etvwin.com" class="info-link">contact@etvwin.com</a>
+      </p>
     </div>
-  </section>
 
-  <footer class="site-footer">
+    <!-- Right Form -->
+    <form class="feedback-form" action="#">
+      <label for="user-email">Email *</label>
+      <input type="email" id="user-email" placeholder="Enter Email" required />
+
+      <label for="show-title">Show Name *</label>
+      <input type="text" id="show-title" placeholder="Enter Show Name" required />
+
+      <label for="channel-select">Select any channel *</label>
+      <select id="channel-select" required>
+        <option value="ETV Telugu">ETV Telugu</option>
+        <option value="ETV Plus">ETV Plus</option>
+        <option value="ETV Andhra Pradesh">ETV Andhra Pradesh</option>
+      </select>
+
+      <label for="user-message">Comments *</label>
+      <textarea id="user-message" rows="4" placeholder="Type your comments..." required></textarea>
+
+      <button type="submit" class="form-submit-btn">Submit</button>
+    </form>
+
+  </div>
+</section>
+
+
+<footer class="site-footer">
     <div class="footer-top">
       <ul class="footer-nav">
         <li><a href="about.html">About Us</a></li>
@@ -161,7 +171,7 @@ login popup end -->
         <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
         <li><a href="Terms and Conditions.html">Terms and Conditions</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="Feedback.html" class="active">Feedback</a></li>
         <li><a href="subscribe.html">Subscription</a></li>
       </ul>
     </div>
@@ -197,8 +207,5 @@ login popup end -->
       </div>
     </div>
   </footer>
-
-  <script src="kids.js"></script>
 </body>
-
 </html>

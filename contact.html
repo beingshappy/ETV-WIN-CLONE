@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ETV Win || Kids</title>
-  <link rel="stylesheet" href="kids.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETV Win || Contact US</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+     <!-- Navbar -->
   <header class="navbar">
     <div class="nav-left">
       <img src="https://www.etvwin.com/images/etv-logo-new.png" class="etv-logo" alt="ETV Win Logo">
       <nav class="nav-menu">
-        <a href="index.html" class="active">HOME</a>
+        <a href="index.html">HOME</a>
         <a href="tv-shows.html">TV SHOWS</a>
         <a href="movies.html">MOVIES</a>
         <a href="watch-free.html">WATCH FREE</a>
@@ -63,12 +62,12 @@
       </div>
 
       <nav class="drawer-menu">
-         <a href="index.html" >HOME</a>
+        <a href="index.html" class="active">HOME</a>
         <a href="tv-shows.html">TV SHOWS</a>
         <a href="movies.html">MOVIES</a>
         <a href="watch-free.html">WATCH FREE</a>
-        <a href="live-tv.html" >LIVE TV</a>
-        <a href="kids.html" class="active">KIDS</a>
+        <a href="live-tv.html">LIVE TV</a>
+        <a href="kids.html">KIDS</a>
       </nav>
 
       <div class="drawer-footer">
@@ -120,43 +119,74 @@ login popup end -->
     </div>
   </header>
 
-  <section class="kids-section">
-    <h2 class="section-title">ETV Bal Bharat Kids</h2>
 
-    <div class="kids-slider">
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Abhimanyu" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Bal Bahubali" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Choti Lambu and Robu" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Wisdom Tree" />
-      </div>
-      <div class="kids-card">
-        <img
-          src="https://etv-win-image.akamaized.net/etvwin/kids/shows78257/bal-bahubali/images/bal-bahubali-270x360.jpg"
-          alt="Bonus Kids Show" />
-      </div>
+ <section class="contact-wrapper">
+  <h2>Contact Us</h2>
+  <div class="contact-container">
+    
+    <!-- Left Info -->
+    <div class="contact-left">
+      <img src="https://www.etvwin.com/images/contactus.png" alt="ETV Win Location" />
+      <h3>ETV Win</h3>
+      <p>ETV Building, 2nd Floor Ramoji Film City</p>
+      <p>Hyderabad - 501512 - Telangana - India</p>
+      <p>Phone: +91 8142212345, +91 8008020555</p>
+      <p>Mon–Sun 7 AM - 10 PM (IST)</p>
+      <p>Email: <a href="mailto:contact@etvwin.com">contact@etvwin.com</a></p>
     </div>
-  </section>
 
+    <!-- Right Form -->
+    <form class="contact-form" action="#">
+      <label>Name</label>
+      <input type="text" placeholder="Enter Name" required />
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter Email ID" required />
+
+      <label>Select Your Country</label>
+      <select required>
+        <option value="IN">India (IN)</option>
+        <option value="US">United States (US)</option>
+        <!-- Add more -->
+      </select>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="+91" required />
+
+      <label>Select Your Issue</label>
+      <select required>
+        <option value="">Select Your Issue</option>
+        <option>App Crashing</option>
+        <option>Subscription</option>
+        <option>Login Issue</option>
+        <option>Other</option>
+      </select>
+
+      <label>Message</label>
+      <textarea placeholder="Type your message here..." rows="4"></textarea>
+
+      <label>Upload Image</label>
+      <input type="file" accept=".png, .jpg, .jpeg, .gif" />
+
+      <small>Accepted extensions: .png, .jpg, .jpeg, .gif (max 1 MB)</small>
+
+      <div class="recaptcha-box">
+        <!-- Embed your site-specific Google reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+ <!-- footer sec -->
   <footer class="site-footer">
     <div class="footer-top">
       <ul class="footer-nav">
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
         <li><a href="redeem.html">Redeem</a></li>
         <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
         <li><a href="Terms and Conditions.html">Terms and Conditions</a></li>
@@ -198,7 +228,5 @@ login popup end -->
     </div>
   </footer>
 
-  <script src="kids.js"></script>
 </body>
-
 </html>
